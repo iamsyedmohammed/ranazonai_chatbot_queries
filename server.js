@@ -10,6 +10,12 @@ const PORT = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
+// ========== Root Route for Monitoring ==========
+app.get('/', (req, res) => {
+  res.status(200).send('✅ RanzBot backend is live!');
+});
+
+
 // Transporter setup for Hostinger (or other custom domain)
 const transporter = nodemailer.createTransport({
   host: "smtp.hostinger.com",  // Change if you're using a different provider
