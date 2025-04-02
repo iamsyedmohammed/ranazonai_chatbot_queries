@@ -11,8 +11,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // ========== Root Route for Monitoring ==========
-app.get('/', (req, res) => {
-  res.status(200).send('✅ RanzBot backend is live!');
+app.get('/ping', (req, res) => {
+  res.status(200).send('pong 🏓 for Chat Bot');
 });
 
 
