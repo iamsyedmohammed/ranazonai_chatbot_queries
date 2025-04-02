@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 // ========== Root Route for Monitoring ==========
 app.get('/ping', (req, res) => {
-  res.status(200).send('pong 🏓 for Chat Bot');
+  res.status(200).send('pong 🏓 for Chat Bot Emails');
 });
 
 
